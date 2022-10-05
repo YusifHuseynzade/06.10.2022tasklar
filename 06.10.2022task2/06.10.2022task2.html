@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <style>
+        .bg-green {
+            background-color: rgb(76, 153, 76);
+        }
+        .text-SZ {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .just-cont-end {
+            justify-content: end;
+        }
+        .text-SZ2 {
+            font-size: 26px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+        .text-SZ3 {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: black;
+            transition: 0.4s;
+        }
+        .text-SZ3:hover {
+            color: green;
+        }
+        .p-absolute {
+            position: absolute;
+        }
+        .p-absolute-img {
+            position: absolute; 
+            top: 0px; 
+            left: 0px; 
+            width: 100%; 
+            height: 100%; 
+            z-index: -100;
+        }
+        .img {
+            object-position: 50% 50%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 1600px;
+            height: 850px;
+            margin-top: 14px;
+            transform: translate3d(0px, 14px, 0px);
+        }
+        .top-10 {
+            top: 15rem;
+            padding: 4rem;
+            opacity: 0.93;
+        }
+        .text-sz4 {
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+        }
+        .text-sz5 {
+            font-size: 18px;
+            font-weight: normal;
+            color: rgb(65, 65, 65);
+        }
+        .btn-clr {
+            background-color: rgb(81, 166, 81);
+            color: white;
+            padding: 1rem 1.5rem;
+        }
+        #landing {
+            height: 90vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center 120px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="header-top-line bg-green">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand navbar-dark navbar-short justify-content-between w-100">
+                        <ul class="navbar-nav me-5 ms-5">
+                            <li class="nav-item dropdown dropdown-flat dropdown-flat-primary">
+                                <a class="nav-link text-white dropdown-toggle" href="#">
+                                    <span class="text-SZ">LANDINGS</span></a>
+                             </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white dropdown-toggle" href="#">
+                                        <span class="text-SZ">DOCUMENTATION</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">
+                                        <span class="text-SZ">BOOKING FORM</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="navbar navbar-expand-lg navbar-light mt-3 mb-3 w-100">
+                                <a class="navbar-brand font-weight-bold ms-5 text-SZ2" href="#">PROFI</a> 
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse just-cont-end">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-SZ3" data-toggle="none" href="#">MASSAGE</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-SZ3" data-toggle="none" href="#">LAWYER</a>
+                                        </li>
+                                        <li><a class="nav-link text-SZ3" href="#">CONTRACTOR</a></li>
+                                        <li><a class="nav-link text-SZ3" href="#">BEAUTY</a></li>
+                                        <li><a class="nav-link text-SZ3" href="#">RESTAURANT</a></li>
+                                    </ul>
+                                    <div class="navbar-spacer"></div>
+                                    <a class="btn btn-outline-success ms-4" href="#">BUY TEMPLATE</a>
+                                </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+    <section id="landing">
+            <div class="d-flex align-items-center justify-content-center py-14 py-md-23 py-lg-25">
+                <div class="card border-0 text-center mx-15 mx-lg-0 bg-white-90 p-absolute top-10">
+                    <div class="card-body text-body p-10 p-lg-22">
+                        <h2 class="text-sz4 mb-4">Landing Pages for<br>Small Businesses</h2>
+                        <p class="text-sz5 mb-3">Create a beautiful website for your business with pre-designed<br>Bootstrap landing pages.</p>
+                        <a href="#" class="btn btn-lg btn-outline-success btn-clr">Buy template</a>
+                    </div>
+                </div>
+            </div>
+        <div>
+            <img src="/images/image-45.jpg" class="img p-absolute-img">
+        </div>
+    </section>
+
+</body>
+</html>
